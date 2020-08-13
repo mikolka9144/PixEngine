@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\Engine\Game\bin\Release\Game.dll
+C:\Users\user\source\repos\Engine\Game\bin\Release\Game.pdb
+C:\Users\user\source\repos\Engine\Game\bin\Release\Engine.dll
+C:\Users\user\source\repos\Engine\Game\bin\Release\Engine.pdb
+C:\Users\user\source\repos\Engine\Game\obj\Release\Game.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Engine\Game\obj\Release\Game.csproj.CopyComplete
+C:\Users\user\source\repos\Engine\Game\obj\Release\Game.dll
+C:\Users\user\source\repos\Engine\Game\obj\Release\Game.pdb
+C:\Users\user\source\repos\Engine\Game\bin\Release\PixBlocks.exe
+C:\Users\user\source\repos\Engine\Game\bin\Release\IronPython.dll

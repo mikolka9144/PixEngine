@@ -1,0 +1,8 @@
+C:\Users\user\source\repos\Engine\Game\bin\Debug\Game.dll
+C:\Users\user\source\repos\Engine\Game\bin\Debug\Game.pdb
+C:\Users\user\source\repos\Engine\Game\bin\Debug\Engine.dll
+C:\Users\user\source\repos\Engine\Game\bin\Debug\Engine.pdb
+C:\Users\user\source\repos\Engine\Game\obj\Debug\Game.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Engine\Game\obj\Debug\Game.csproj.CopyComplete
+C:\Users\user\source\repos\Engine\Game\obj\Debug\Game.dll
+C:\Users\user\source\repos\Engine\Game\obj\Debug\Game.pdb

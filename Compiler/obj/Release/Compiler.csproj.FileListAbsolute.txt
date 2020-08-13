@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\Engine\Compiler\bin\Release\Compiler.exe.config
+C:\Users\user\source\repos\Engine\Compiler\bin\Release\Compiler.exe
+C:\Users\user\source\repos\Engine\Compiler\bin\Release\Compiler.pdb
+C:\Users\user\source\repos\Engine\Compiler\bin\Release\Engine.dll
+C:\Users\user\source\repos\Engine\Compiler\bin\Release\Engine.pdb
+C:\Users\user\source\repos\Engine\Compiler\obj\Release\Compiler.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Engine\Compiler\obj\Release\Compiler.csproj.CopyComplete
+C:\Users\user\source\repos\Engine\Compiler\obj\Release\Compiler.exe
+C:\Users\user\source\repos\Engine\Compiler\obj\Release\Compiler.pdb
+C:\Users\user\source\repos\Engine\Compiler\bin\Release\PixBlocks.exe
+C:\Users\user\source\repos\Engine\Compiler\bin\Release\IronPython.dll
