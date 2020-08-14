@@ -24,7 +24,7 @@ namespace Engine.Game
         {
             engine = new GameEngine();
 
-            MainMenu menu = new MainMenu(engine.Mouse, engine.Renderer);
+            MainMenu menu = new MainMenu(engine.Mouse);
             menu.RenderUI();
 
             engine.Renderer.AddBlock(new Vector(0, 0), new Blocks.GrassBlock());

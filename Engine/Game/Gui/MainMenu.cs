@@ -13,7 +13,7 @@ namespace Engine.Game.Gui
     class MainMenu : UserInterface
     {
         Input input;
-        public MainMenu(MouseHandler mouse, Renderer renderer)
+        public MainMenu(MouseHandler mouse)
         {
             AddElement(new Background(new Color(255, 255, 255)));
             input = new Input(new Vector(0, 0), "< 0 >", "Type something", 10, new Color(0, 255, 0), this, mouse, (string inputText) =>
