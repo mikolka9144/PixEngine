@@ -47,7 +47,7 @@ namespace Engine.Game
 
             engine.Setup(this);
             engine.Renderer.RenderFrame(0, 0);
-            menu.ShowUi(engine.Renderer);
+            menu.ShowUi(engine.Renderer, false);
             engine.StartGame();
         }
         public void onRender()

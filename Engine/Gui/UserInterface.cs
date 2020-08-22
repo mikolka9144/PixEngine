@@ -25,17 +25,23 @@ namespace Engine.Gui
                 elem.RenderElement();
             }
         }
-        public void ShowUi(Renderer renderer)
+        public void ShowUi(Renderer renderer, bool pause)
         {
-            renderer.render = false;
+            if (pause)
+            {
+                renderer.render = false;
+            }
             foreach(IUiControl elem in elements)
             {
                 elem.show();
             }
         }
-        public void HideUi(Renderer renderer)
+        public void HideUi(Renderer renderer, bool unpause)
         {
-            renderer.render = true;
+            if (unpause)
+            {
+                renderer.render = true;
+            }
             foreach (IUiControl elem in elements)
             {
                 renderer.render = true;

@@ -5,4 +5,3 @@ C:\Users\user\source\repos\Engine\Engine\bin\Release\PixBlocks.exe
 C:\Users\user\source\repos\Engine\Engine\obj\Release\Engine.csproj.CopyComplete
 C:\Users\user\source\repos\Engine\Engine\obj\Release\Engine.dll
 C:\Users\user\source\repos\Engine\Engine\obj\Release\Engine.pdb
-C:\Users\user\source\repos\Engine\Engine\obj\Release\Engine.csprojAssemblyReference.cache
