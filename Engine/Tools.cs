@@ -41,7 +41,7 @@ namespace Engine
             ClickEvent = (float clickX, float clickY) => { };
             RenderGuide = new List<PixElem>();
             position = new Vector(0, 0);
-            IsStatic = true;
+            IsStatic = false;
             onScreen = false;
         }
 
