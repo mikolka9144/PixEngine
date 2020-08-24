@@ -12,6 +12,8 @@ namespace Engine.renderer
     {
         public IBlock parent;
         public bool main;
+        public float xoff;
+        public float yoff;
         public override void update()
         {
             base.update();

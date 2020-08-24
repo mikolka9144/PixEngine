@@ -2,8 +2,10 @@
 using Engine.Game.Gui;
 using Engine.Gui.Components;
 using Engine.renderer;
+using Engine.renderer.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,30 +26,18 @@ namespace Engine.Game
         {
             engine = new GameEngine();
 
-            MainMenu menu = new MainMenu(engine.Mouse);
-            menu.RenderUI();
 
-            engine.Renderer.AddBlock(new Vector(0, 0), new Blocks.GrassBlock());
-            engine.Renderer.AddSprite(new Player());
-
-            //movement
-            engine.Keyboard.AddListener("w", () => {
-                campos.y += 2;
-            });
-            engine.Keyboard.AddListener("s", () => {
-                campos.y -= 2;
-            });
-            engine.Keyboard.AddListener("a", () => {
-                campos.x -= 2;
-            });
-            engine.Keyboard.AddListener("d", () => {
-               campos.x += 2;
-            });
+            Bitmap image = new Bitmap(@"Path to bitmap");
+            ImageBlock block = Tools.BitmapToBlock(image, 1);
+            block.ClickEvent = (float clickX, float clickY) =>
+            {
+                throw new Exception(clickX + " " + clickY);
+            };
+            engine.Renderer.AddBlock(new Vector(0, 0), block);
 
 
             engine.Setup(this);
             engine.Renderer.RenderFrame(0, 0);
-            menu.ShowUi(engine.Renderer, false);
             engine.StartGame();
         }
         public void onRender()

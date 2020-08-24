@@ -15,7 +15,7 @@ namespace Engine.renderer
     {
         List<IBlock> game;
         List<ISprite> sprites;
-        List<Sprite> onScreen;
+        List<EngineSprite> onScreen;
         MouseHandler Mouse;
         public bool render;
         bool previousRenderState;
@@ -26,8 +26,9 @@ namespace Engine.renderer
             Mouse = mouse;
             game = new List<IBlock>();
             sprites = new List<ISprite>();
-            onScreen = new List<Sprite>();
+            onScreen = new List<EngineSprite>();
         }
+
         public void AddBlock(Vector position, IBlock block)
         {
             block.position = position;
@@ -134,25 +135,23 @@ namespace Engine.renderer
                 //!IsOnScreen(block, camposx, camposy) && !block.parent.IsStatic
                 if ((!IsOnScreen(block, camposx, camposy)) && !block.parent.IsStatic)
                 {
-                    GameScene.gameSceneStatic.remove(block);
                     block.parent.onScreen = false;
+                    GameScene.gameSceneStatic.remove(block);
                 }
                 if (block.parent.position.x-camposx != block.position.x || block.parent.position.y-camposy != block.position.y)
                 {
-                    block.position.x = block.parent.position.x-camposx;
-                    block.position.y = block.parent.position.y-camposy;
+                    block.position.x = block.parent.position.x+block.xoff-camposx;
+                    block.position.y = block.parent.position.y+block.yoff-camposy;
                 }
 
                 // On Click
                 if (mouseState.pressed)
                 {
-                    if (block.main) {
                         if (mouseState.position.x > block.position.x - block.size / 2 && mouseState.position.x < block.position.x + block.size / 2 &&
                             mouseState.position.y > block.position.y - block.size / 2 && mouseState.position.y < block.position.y + block.size / 2)
                         {
                             block.parent.onClick(mouseState.position.x, mouseState.position.y);
                         }
-                    }
                 }
             }
             foreach(IBlock block in game)
@@ -173,6 +172,8 @@ namespace Engine.renderer
                             blockSprite.image = elem.img;
                             blockSprite.size = elem.size;
                             blockSprite.color = elem.color.toPixblocks();
+                            blockSprite.xoff = elem.xoff;
+                            blockSprite.yoff = elem.yoff;
                             blockSprite.position = new PixVector(block.position.x + elem.xoff-camposx, block.position.y + elem.yoff-camposy);
                             GameScene.gameSceneStatic.add(blockSprite);
                             onScreen.Add(blockSprite);
